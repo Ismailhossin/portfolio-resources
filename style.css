@@ -240,47 +240,43 @@ textarea {
 .hide {
   display: none;
 }
+
+
 @media screen and (max-width: 576px) {
-  .skills,
-  .resume-contiater,
-  .footer-section {
-    flex-direction: column;
+  .header{
+    background-image: none;
   }
-  .footer-section {
-    padding: 20px;
+  nav{
+    margin: 10px;
   }
-  .footer-column {
-    box-sizing: border-box;
+  
+  .banner{
+    margin: 10px;
+  }
+  .banner-img{
     width: 100%;
   }
-  .footer-column input[type="text"],
-  [type="email"],
-  textarea {
+
+  .about{
+    width: calc(100% - 0px);
+    padding: 0;
+  }
+
+  .resume{
     width: calc(100% - 20px);
-    outline: none;
-  }
-
-  /* chatGPT responsive */
-   .about {
-    padding: 50px 20px;
-    width: 90%;
-  }
-
-  .about-container {
-    width: 100%;
     margin: 40px auto;
   }
 
-  .about-content {
-   flex-direction: column; /* row থেকে column এ যাবে */
-    align-items: center;
-    gap: 20px; /* item এর মাঝে ফাঁকা */
+  .footer-section,
+  .resume-contiater,
+  .skills,
+  .about-content,
+  .banner{
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
   }
-
-  .about-content h3 {
-    font-size: 18px;
-    margin: 10px 0;
+  .footer-column{
+    width: calc(100% - 20px);
   }
 }
-  
-
